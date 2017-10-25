@@ -1,0 +1,71 @@
+.components-play{
+    display: grid;
+    grid-template-columns: 145px auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    .avatar{
+        
+        img{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    }
+
+    .control{
+        height: 100px;
+        border: 1px solid #ccc;
+        border-bottom: 1px solid transparent;
+        padding: 10px;
+        position: relative;
+        .name{
+            color: #123;
+            font-size: 1.5rem;
+        }
+        .author{
+            font-size: .8rem;
+            margin: .1rem;
+        }
+
+        .pro{
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 33%;
+            border-bottom: 1px solid #ccc;
+            /*动画*/
+            transition: width .25s;
+            
+            cursor: pointer;
+
+            &:before{
+                content: ">";
+                color: #ccc;
+                font-size: 1.2rem;
+                position: absolute;
+                // background-color: #666;
+                right: 0;
+                transform: translate3d(38%, -56%, 0);
+                
+            }
+        }
+
+        .menu{
+            padding: 10px 0;
+            *{
+                float: left;
+                width: 25px;
+                height: 25px;
+                margin:0 15px 0 2px;
+                text-align: center;
+                border: 1px solid #ccc;
+                cursor: pointer;
+                &:hover{
+                    border: 1px solid #666;  
+                }
+            }
+        }
+    }
+    
+}
