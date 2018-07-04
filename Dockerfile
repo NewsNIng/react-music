@@ -10,7 +10,7 @@ EXPOSE 443
 
 RUN \
 npm install && \
-npm run build && \
+npm build && \
 cp -r dist/* /var/www/html && \
 rm -rf /app
 
